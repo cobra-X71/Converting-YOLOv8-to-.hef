@@ -63,4 +63,15 @@ git clone https://github.com/hailo-ai/hailo_model_zoo.git
 cd hailo_model_zoo; pip install -e .
 ```
 
-14. 
+14. Now move the ONNX file to the file folder from earlier
+
+15. Add the images you trained your model with in a folder called train
+
+16. Now navigate to "\home\YOUR USERNAME\hailo_model_zoo\hailo_model_zoo\cfg\alls\generic\yolov8(whatever version you are using, I used n).alls
+
+17. Modify the yolov8n.alls and add the following line to the top IF YOU ARE USING A ONE CLASS MODEL. Otherwise move to step 18.
+
+```
+
+```
+19. 
