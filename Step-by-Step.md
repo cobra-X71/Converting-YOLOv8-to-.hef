@@ -72,6 +72,10 @@ cd hailo_model_zoo; pip install -e .
 17. Modify the yolov8n.alls and add the following line to the top IF YOU ARE USING A ONE CLASS MODEL. Otherwise move to step 18.
 
 ```
+quantization_param([conv42, conv53, conv63], force_range_out=[0.0, 1.0])
+```
+19. Finally run the following command in the "\home\YOUR USERNAME\" folder. Modify the yolov8n to whatever version you are using and the number of classes to your number of classes. 
 
 ```
-19. 
+hailomz compile yolov8n --ckpt=best.onnx --hw-arch hailo8l --calib-path train/images --classes 1 --performance
+```
