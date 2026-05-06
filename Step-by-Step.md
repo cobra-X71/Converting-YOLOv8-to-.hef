@@ -3,4 +3,10 @@
 1. Convert .pt file to .onnx, there is a sample script in this repository called ONNX_converter.py
 
 2. Enable WSL
-   -
+
+```
+wsl --list --online
+wsl --install -d Ubuntu-22.04
+```
+
+3. 
